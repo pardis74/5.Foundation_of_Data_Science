@@ -1,0 +1,49 @@
+col_name,Desc,Data_Type,"scale (N, O, I, R)"
+flare_id, identifier for solar flares,String,N
+start_time,Energy increase event,datetime,I
+peak_time,Flare Maximum Intensity or Brightness,datetime,I
+end_time,Energy decrease event.,datetime,I
+goes_class,Solar flare classification,String,O
+noaa_active_region,Solar Activity Monitoring,Int64,N
+fl_lon,NorthWest Flares,Int64,R
+fl_lat,Southeast Flares,Int64,R
+fl_loc_src,Don't Need It,Don't Need It,Don't Need It
+ssw_flare_id,Don't Need It ,Don't Need It ,Don't Need It 
+hinode_flare_id,Don't Need It,Don't Need It,Don't Need It
+primary_verified,Don't Need It,Don't Need It ,Don't Need It 
+secondary_verified,Don't Need IT,Don't Need It ,Don't Need It 
+candidate_ars,Don't Need It,Don't Need It,Don't Need It
+cme_id,Identifier for coronal mass ejections,String,N
+fl_pa,Principle Angle  for Flares,Int64,R
+cme_mpa,Main Principle Angle for Coronal Mass Ejection,Int64,R
+diff_a,diff_a,Int64,R
+cme_vel,speed for coronal mass ejection,Int64,R
+cme_width,width for coronal mass ejection,Int64,R
+cme_assoc_conf,assoc conf for coronal mass ejection,Int64,R
+cdaw_cme_id,identifier for cdaw coronal mass ejection,Int64,N
+cdaw_cme_width,width for cdaw coronal mass ejection,Int64,R
+cdaw_cme_vel,speed for cdaw coronal mass ejection,Int64,R
+cdaw_cme_pa,rinciple angle for cdaw coronal mass ejection,Int64,R
+donki_cme_id,identifier for donki coronal mass ejection,Int64,N
+donki_cme_half_angle,half angle for donki coronal mass ejection,Int64,R
+donki_cme_vel,Speed for donki coronal mass ejection,Int64,R
+lowcat_cme_id,identifier for lowcat coronal mass ejection,Int64,N
+lowcat_cme_width,width for lowcat coronal mass ejection,Int64,R
+lowcat_cme_vel,Speed for lowcat coronal mass ejection,Int64,R
+lowcat_cme_pa,principle angle for lowcat coronal mass ejection,Int64,R
+cme_valid_conf,valid conf for coronal mass ejection,Int64,R
+goes_class_num,Solar Flare Intensity,Int64,R
+start_time_bf24,Start time for bf24,datetime,I
+Background_X-ray_flux,background X-ray flux,Int64,R
+relative_X-ray_flux_increase,relative X-ray flux increase,Int64,R
+fluorescence,area under X-ray flux line (t(start)~t(end)),Int64,R
+fluorescence_fhalf,area under X-ray flux line (t(start)~t(peak)),Int64,R
+fluorescence_lhalf,area under X-ray flux line (t(peak)~t(end)),Int64,R
+Flare_rise_time,Peak Time - Start Time,Int64,R
+Flare_decay_time,End Time - Peak Time,Int64,R
+Flare_duration,End Time - Start Time,Int64,R
+rise_gradient,( xrf@flare_peak_time - xrf@flare_start_time ) / flare_rise_time,Int64,R
+decay_gradient,( xrf@flare_end_time - xrf@flare_peak_time ) / flare_decay_time,Int64,R
+avg_fluorescence,Fluorescence / flare_duration,Int64,R
+avg_rise_fluorescence,Fluorescence_fhalf / Flare_rise_time,Int64,R
+avg_decay_fluorescence,Fluorescence_lhalf / Flare_decay_time,Int64,R
